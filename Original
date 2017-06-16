@@ -1,0 +1,208 @@
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  body, html {
+    height: 100%;
+    color: black;
+  }
+  
+  /* Paralax Effect */
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Image 1 (Quote and Hello) */
+  .bgimg-1 {
+    background-image: url(http://res.cloudinary.com/dom520/image/upload/v1496806429/C_C_gdo8s0.jpg);
+    min-height: 100%;
+  }
+  
+  /* Image 2 (About Me/ Portfolio) */
+  .bgimg-2 {
+    background-image: url(http://res.cloudinary.com/dom520/image/upload/v1496968596/negative-space-desk-business-notes-helloquence_luk9ky.jpg);
+    min-height: 400px;
+  }
+  
+  /* Image 3 (Contact) */
+  .bgimg-3 {
+    background-image: url(http://res.cloudinary.com/dom520/image/upload/v1496968877/Desk_of_creative_professional_qgyy4n.jpg);
+    min-height: 400px;
+  }
+  
+  .w3-wide {
+    letter-spacing: 10px;
+  }
+  .w3-hover-opacity {
+    cursor: pointer;
+  }
+  .footer {
+  display: block;
+  }
+  
+  
+</style>
+
+<body>
+
+  <!-- Top/Nav Bar (stationary)-->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript: void(0);" onlick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button w3-hide-small">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user-o"></i> ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-file-pdf-o" </i></i> RESUME</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope-o"></i> CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+
+    <!-- Small Screen Nav -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+      <a href="#home" class="w3-bar-item w3-button" onclick="toggleFunction()">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#information" class="w3-bar-item w3-button" onclick="toggleFunction()">RESUME</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    </div>
+  </div>
+
+  <!-- First Image-->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Welcome<span class="w3-hide-small"></span>
+    </div>
+  </div>
+
+  <!-- Background/ About Me Section-->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">ABOUT</h3>
+    <p><i class="fa fa-quote-left" aria-hidden="true"></i>
+      <justify> Hello there. Welcome to DF.oundation by Dominic Freire. This webpage is gives a brief summary and description about myself and my credentials for employers and other individuals see. Here you will see my background, resume, and my contact information
+        if you are interested in what I have to offer. <i class="fa fa-quote-right" aria-hidden="true"></i></justify>
+    </p>
+    <h3 class="w3-center">BACKGROUND</h3>
+    <p><justify>I am a current junior attending the University of Connecticut studying accounting and minoring in Economics. What I hope to acheive in the next year is to establish a network with CPAs who will allow me to gain utilize my skills and gain more knowledge in the field of Accountancy. While studying my related fields, I am also self-taught in basic Frontend Development programming. This page is an example of my capabilties with HTML, CSS, and Javascript. I hope you enjoyed reading about who I am.
+      <justify><p>
+  </div>
+
+  <!-- Second Image-->
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+  </div>
+
+  <!-- Resume Section-->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">RESUME</h3>
+    <p>
+      <center>Below is an image of my Resume/ CV.</center>
+    </p>
+  </div>
+
+
+  <!-- Third Image  Me-->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+  </div>
+
+  <!-- Contact Section-->
+  <style>
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+    
+    input[type=submit] {
+      background-color: #000;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+   
+  </style>
+
+
+  <div class="w3-content w3-container w3-padding-64" id="contact">
+    <h3 class="w3-center">CONTACT ME</h3>
+
+    <div class="container">
+      
+      <?=$thankYou ?>
+      
+      <form method ="post" action="contact.php">
+        <label>Name</label>
+        <input type="text" id="name" name="sendername" placeholder="Your name">
+
+        <label for="email"></label>Email
+        <input type="text" id="email" name="senderemail" placeholder="Your email">
+
+     
+        <label>Message:</label>
+        <textarea id="message" rows="5" cols="20" name="message" placeholder="Write something"></textarea>
+        
+<input type="submit" name="submit">
+        
+      </form>
+    </div>
+      </div>
+
+
+    <!-- Footer -->
+    
+<footer class="w3-container w3-black w3-center w3-margin-top">
+  <p>Find me on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+
+    
+    
+    <!--Nav Attributes-->
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+
+</body>
+
+</html>
